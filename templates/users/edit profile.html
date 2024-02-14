@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+{% extends 'users/user_index.html' %}
+{% block body %}
+<body>
+<form action="/editprofilepost" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<div class="container-fluid"><div class="card"><div class="card">
+  <table  border="1" class="table-bordered table-striped table-hover">
+    <tr>
+      <td>Photo</td>
+      <td><img src="{{ data['photo'] }}"  width="100px" height="100px" alt=""/><input type="file" class="form-control-file" name="fileField" id="fileField" /></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" value="{{ data['name'] }}" class="form-control" name="textfield" id="textfield" /></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td><p>
+        <label>
+          <input type="radio" {% if data['gender']=='Male' %} checked {% endif %} name="RadioGroup1" value="Male" id="RadioGroup1_0" />
+          Male</label>
+        <br />
+        <label>
+          <input type="radio" {% if data['gender']=='Female' %} checked {% endif %}  name="RadioGroup1" value="Female" id="RadioGroup1_1" />
+          Female</label>
+        <br />
+        <label>
+          <input type="radio" {% if data['gender']=='Others' %} checked {% endif %}  name="RadioGroup1" value="Others" id="RadioGroup1_2" />
+          Others</label>
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><input type="text" value="{{ data['place'] }}" class="form-control" name="textfield2" id="textfield2" /></td>
+    </tr>
+    <tr>
+      <td>Post</td>
+      <td><input type="text" value="{{ data['post'] }}"  class="form-control" name="textfield3" id="textfield3" /></td>
+    </tr>
+    <tr>
+      <td>Pin</td>
+      <td><input type="text" value="{{ data['pin'] }}"  class="form-control" name="textfield4" id="textfield4" /></td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td><input type="text" value="{{ data['country'] }}"  class="form-control" name="textfield5" id="textfield5" /></td>
+    </tr> <tr>
+      <td>Email</td>
+      <td><input type="text" value="{{ data['email'] }}"  class="form-control" name="email" id="email" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" class="btn btn-primary" value="Submit" /></td>
+    </tr>
+  </table>
+</div></div></div>
+</form>
+</body>
+{% endblock %}
+</html>

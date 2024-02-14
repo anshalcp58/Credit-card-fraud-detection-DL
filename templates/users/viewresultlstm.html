@@ -1,0 +1,57 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{% extends 'users/user_index.html' %}
+{% block body %}
+
+<body>
+
+<table class="table table-bordered">
+
+    {% for i in range(0,l) %}
+    <tr>
+        {% for k in test[i] %}
+        <td>{{ k }}</td>
+        {% endfor %}
+
+
+        <td>{{ data[i] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+<br>
+
+<br>
+<h3>AUC Curve</h3>
+<img src="/static/aba.jpg" width="500px"/>
+<br>
+<h3>Confusion Matrix</h3>
+<img src="/static/conf_mat.png" width="500px"/>
+
+<br>
+
+<h3>Performance Factors</h3>
+<table class="table table-bordered">
+    <tr>
+        <td>Accuracy</td>
+        <td>{{ acclk }}</td>
+    </tr>
+    <tr>
+        <td>F1 Score</td>
+        <td>{{ f1lik }}</td>
+    </tr>
+    <tr>
+        <td>Recall</td>
+        <td>{{ recalllik }}</td>
+    </tr>
+
+    <tr>
+        <td>Precision</td>
+        <td>{{ preclik }}</td>
+    </tr>
+</table>
+</body>
+{% endblock %}

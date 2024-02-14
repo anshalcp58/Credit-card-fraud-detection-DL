@@ -1,0 +1,193 @@
+{#<!DOCTYPE html>#}
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>TransactionX </title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="/static/admin/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="/static/admin/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/static/admin/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="/static/admin/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/static/admin/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="/static/admin/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/admin/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="header_main">
+            <div class="mobile_menu">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="logo_mobile"><a href="index.html"><img src="/static/admin/images/logo.png"></a></div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+{#                        <li class="nav-item">#}
+{#                           <a class="nav-link" href="/ahome">Home</a>#}
+{#                        </li>#}
+                        <li class="nav-item">
+                           <a class="nav-link" href="/view_profile">view Profile</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="/view_feedback_user">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="/change_password_user">Change password</a>
+                        </li>r
+                        <li class="nav-item">
+                           <a class="nav-link " href="/send_feedback">Send feedback</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+{#               <div class="logo"><a href="index.html"><img src="/static/admin/images/logo.png"></a></div>#}
+               <div class="menu_main">
+                  <ul>
+                      <li class=""><a href="#home">Home</a></li>
+{#                     <li><a href="about.html">About</a></li>#}
+
+                      <li><a href="/view_profile#services">Profile</a></li>
+                     <li><a href="/view_feedback_user#services">Feedback</a></li>
+                      <li><a href="/change_password_user#services">Change password</a></li>
+                      <li><a href="/send_feedback#services">Feedback</a></li>
+                      <li><a href="/viewresultrf#services">Result RF</a></li>
+                      <li><a href="/viewresultnb#services">Result NB</a></li>
+                      <li><a href="/viewresultdt#services">Result DT</a></li>
+                      <li><a href="/viewresultsvm#services">Result SVM</a></li>
+                      <li><a href="/viewresultmlp#services">Result MLP</a></li>
+                      <li><a href="/viewresultlstm#services">Result LSTM</a></li>
+                      <li><a href="/#services">Logout</a></li>
+
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+         <!-- banner section start -->
+         <div class="banner_section layout_padding" id="home">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <h1 class="banner_taital">TransactionX</h1>
+                        <p class="banner_text">Tool to detect Credit card fraud using the state of art deep learning technique</p>
+{#                        <div class="read_bt"><a href="#">Get A Quote</a></div>#}
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital">TransactionX</h1>
+                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
+{#                        <div class="read_bt"><a href="#">Get A Quote</a></div>#}
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital">TransactionX</h1>
+                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
+{#                        <div class="read_bt"><a href="#">Get A Quote</a></div>#}
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+
+
+      <!-- header section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding" id="services">
+         <div class="container">
+
+         <div class="card">
+         <div style="overflow: auto;width: 100%;height: 100%">
+             {% block body %}
+
+             {% endblock %}
+         </div>
+         </div>
+         </div>
+      </div>
+
+
+
+
+
+
+      <!-- services section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+      </div>
+      <!-- about section end -->
+      <!-- blog section start -->
+      <!-- choose section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="input_btn_main">
+               <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+               <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+            </div>
+            <div class="location_main">
+               <div class="call_text"><img src="/static/admin/images/call-icon.png"></div>
+               <div class="call_text"><a href="#">Call +01 1234567890</a></div>
+               <div class="call_text"><img src="/static/admin/images/mail-icon.png"></div>
+               <div class="call_text"><a href="#">demo@gmail.com</a></div>
+            </div>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><img src="/static/admin/images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="/static/admin/images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="/static/admin/images/linkedin-icon.png"></a></li>
+                  <li><a href="#"><img src="/static/admin/images/instagram-icon.png"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="/static/admin/js/jquery.min.js"></script>
+      <script src="/static/admin/js/popper.min.js"></script>
+      <script src="/static/admin/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/admin/js/jquery-3.0.0.min.js"></script>
+      <script src="/static/admin/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="/static/admin/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/static/admin/js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="/static/admin/js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+   </body>
+</html>
